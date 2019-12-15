@@ -18,8 +18,20 @@ This service provides a simple rest api with 3 methods:
         
         
 ### Prerequisites
-* JDK 11+ installed with JAVA_HOME configured appropriately
-* Apache Maven 3.5.3+
+* Python 3.7+
+* PIP3
+* Virtualenv
+
 
 ### Run example
-To start the example in development mode, just run `mvn clean compile quarkus:dev`
+To start the example in development mode (Linux/Fedora 30):
+
+1. open a terminal and install virtualenv `pip3 install virtualenv --user`
+2. in project root create a virtual environment `virtualenv --python=python3 target` (choose another name instead of *target* if you wish).
+3. enter *target* directory `cd target`
+4. call `source bin/activate` (The source command can be used to load any functions file into the current shell script or a command prompt.)
+5. install flask inside this virtual environment `pip install flask` (**not** pip3 just pip)
+6. return to root directory with `cd ..`
+6. run the application `python3 app.py`
+
+
