@@ -16,12 +16,9 @@ This service provides a simple rest api with 3 methods:
     * /health/ready
         * returns a ready message
         
-        
 ### Prerequisites
 * Python 3.7+
-* PIP3
-* Virtualenv
-
+* pip3
 
 ### Run example
 To start the example in development mode (Linux/Fedora 30):
@@ -30,8 +27,8 @@ To start the example in development mode (Linux/Fedora 30):
 2. in project root create a virtual environment `virtualenv --python=python3 target` (choose another name instead of *target* if you wish).
 3. enter *target* directory `cd target`
 4. call `source bin/activate` (The source command can be used to load any functions file into the current shell script or a command prompt.)
-5. install flask inside this virtual environment `pip install flask` (**not** pip3 just pip)
-6. return to root directory with `cd ..`
+5. install flask inside this virtual environment `pip install flask` (do **not** use pip3 command, just pip)
+6. return to project root with `cd ..`
 6. run the application `python3 app.py`
 
 
